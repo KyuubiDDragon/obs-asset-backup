@@ -34,34 +34,25 @@ Das Skript verwendet ausschließlich Standard-Python-Bibliotheken, sodass keine 
 
 ## Nutzung
 
-1. **Skript starten:**  
-   Führe das Skript über die Kommandozeile oder per Doppelklick aus:
+### **1. Nutzung als Python-Skript**
+Falls du Python installiert hast, kannst du das Skript direkt ausführen:
 
-   ```bash
-   python obs_asset_manager.py
-   ```
+```bash
+python obs_asset_manager.py
+```
 
-2. **OBS Export JSON auswählen:**  
-   Klicke auf den Button "Auswählen" neben dem Eingabefeld, um deine OBS Export JSON-Datei auszuwählen.
+### **2. Nutzung als EXE-Datei (Windows)**
+Alternativ kannst du die vorkompilierte `.exe`-Datei verwenden, ohne Python zu installieren:
+1. Lade die Datei `OBS_Asset_Manager.exe` herunter.
+2. Doppelklicke die `.exe`, um das Programm zu starten.
 
-3. **Modus wählen:**  
-   Wähle einen der drei Modi über die Radiobuttons:
-   - *Assets kopieren & Pfade anpassen:*  
-     Kopiert alle Assets in einen Zielordner und passt die JSON-Pfade an.
-   - *Nur Pfad aktualisieren:*  
-     Aktualisiert ausschließlich die Dateipfade in der JSON.
-   - *Nur Assets backupen:*  
-     Erstellt ein Backup aller Assets in einem separaten Ordner, ohne die JSON zu verändern.
+Falls du das Programm selbst als `.exe` bauen möchtest, führe folgenden Befehl aus:
 
-4. **Zielordner auswählen:**  
-   Wähle den entsprechenden Zielordner (für Kopieren, Backup oder den Ordner, in dem die aktualisierte JSON gespeichert werden soll).
+```bash
+pyinstaller --onefile --windowed --name "OBS_Asset_Manager" obs_asset_manager.py
+```
 
-5. **Starten:**  
-   Klicke auf "Start", um den Prozess zu starten.  
-   Bei Fehlermeldungen (z. B. wenn bestimmte Dateien nicht gefunden werden) werden diese in einer Textdatei `missing_files.txt` im entsprechenden Scene-Ordner protokolliert und in einer Erfolgsmeldung angezeigt.
-
-6. **Exportordner öffnen:**  
-   Nach Abschluss des Vorgangs wird der entsprechende Zielordner automatisch im Dateiexplorer geöffnet.
+Die erstellte `.exe` findest du anschließend im `dist/`-Ordner.
 
 ## Lizenz
 
