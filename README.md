@@ -58,10 +58,3 @@ Die erstellte `.exe` findest du anschließend im `dist/`-Ordner.
 
 Dieses Projekt steht unter der MIT-Lizenz. Weitere Informationen findest du in der Datei [LICENSE](LICENSE).
 
-## Download
-
-Du kannst das Repository [hier herunterladen](https://github.com/dein-benutzername/obs-asset-manager) (ersetze den Link durch den tatsächlichen Repository-Link).
-
----
-
-*Viel Erfolg mit deinem OBS Asset Manager!*
